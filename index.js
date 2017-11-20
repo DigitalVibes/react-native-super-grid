@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, View, FlatList, Dimensions } from 'react-native';
+import { StyleSheet, View, FlatList, Dimensions, ViewPropTypes } from 'react-native';
 import { chunkArray } from './utils';
 
 const styles = StyleSheet.create({
@@ -126,7 +126,7 @@ SuperGrid.propTypes = {
   itemWidth: PropTypes.number,
   fixed: PropTypes.bool,
   spacing: PropTypes.number,
-  style: View.propTypes.style,
+  style: ViewPropTypes.style,
   staticWidth: PropTypes.number
 };
 
