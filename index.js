@@ -114,7 +114,7 @@ class SuperGrid extends Component {
         onLayout={this.onLayout}
         data={state.rows}
         renderItem={this.renderRow}
-        keyExtractor={(item, index) => index}
+        keyExtractor={(item, index) => index.toString()}
       />
     )
   }
